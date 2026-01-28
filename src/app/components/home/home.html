@@ -1,0 +1,28 @@
+<!-- <section class="home">
+  <div class="content">
+    <h1>Hi, I'm <span>Dheeraj Gawali</span></h1>
+    <h2>Angular Developer</h2>
+    <p>
+      Building scalable, high-performance web applications with Angular.
+    </p>
+
+    <button class="btn btn-primary" routerLink="/projects">View My Work</button>
+  </div>
+</section> -->
+
+<section class="home-section">
+  <div class="home-content">
+    <h1 class="animated-name">
+      <span *ngFor="let letter of nameLetters; let i = index" [style.animation-delay.ms]="i * 100">
+        {{ letter }}
+      </span>
+    </h1>
+    <h2 class="animated-title">{{ title }}</h2>
+    <p class="animated-summary">
+      Highly skilled Angular Developer with 6+ years of experience building scalable and responsive web applications.
+    </p>
+    <div class="home-buttons">
+      <button class="btn btn-primary" routerLink="/projects">View My Work</button>
+    </div>
+  </div>
+</section>
