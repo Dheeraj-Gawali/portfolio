@@ -1,24 +1,26 @@
-<section class="contact">
-    <h2>Contact Me</h2>
-    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-        <label for="name">Name</label>
-        <input id="name" formControlName="name" placeholder="Your Name" />
-        <div *ngIf="contactForm.controls['name'].invalid && contactForm.controls['name'].touched">
-            Name is required.
-        </div>
+<section class="p-3">
+    <div class="contact">
+        <h2>Contact Me</h2>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <label for="name">Name</label>
+            <input id="name" formControlName="name" placeholder="Your Name" />
+            <div *ngIf="contactForm.controls['name'].invalid && contactForm.controls['name'].touched">
+                Name is required.
+            </div>
 
-        <label for="email">Email</label>
-        <input id="email" formControlName="email" placeholder="Your Email" />
-        <div *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched">
-            Enter a valid email.
-        </div>
+            <label for="email">Email</label>
+            <input id="email" formControlName="email" placeholder="Your Email" />
+            <div *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched">
+                Enter a valid email.
+            </div>
 
-        <label for="message">Message</label>
-        <textarea id="message" formControlName="message" placeholder="Your Message"></textarea>
-        <div *ngIf="contactForm.controls['message'].invalid && contactForm.controls['message'].touched">
-            Message must be at least 10 characters.
-        </div>
+            <label for="message">Message</label>
+            <textarea id="message" formControlName="message" placeholder="Your Message"></textarea>
+            <div *ngIf="contactForm.controls['message'].invalid && contactForm.controls['message'].touched">
+                Message must be at least 10 characters.
+            </div>
 
-        <button type="submit">Send Message</button>
-    </form>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 </section>

@@ -9,4 +9,18 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class Header {
 
+  downloadbtn() {
+    const fileUrl = 'assets/Dheeraj_Gawali_Resume.pdf';
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      if (isMobile) {
+        window.location.href = fileUrl;
+      } else {
+        const link = document.createElement('a');
+        link.href = fileUrl;
+        link.download = 'resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+  }
 }

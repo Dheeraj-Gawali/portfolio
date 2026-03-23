@@ -57,3 +57,23 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+
+# Angular Portfolio
+
+Professional portfolio website built using Angular v20.
+
+## Features
+- Fully responsive design
+- Animated home section
+- About, Projects, Contact pages
+- Reactive contact form
+- Modern Angular v20 standalone architecture
+
+## Tech Stack
+- Angular v20
+- TypeScript
+- SCSS
+- RxJS
+
+
