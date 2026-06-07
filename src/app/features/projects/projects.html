@@ -1,0 +1,17 @@
+<section class="projects bgColorClass">
+	<h2>Projects</h2>
+
+	<div class="project-card" *ngFor="let project of projects">
+		<h3>{{ project.name }}</h3>
+		<h6>{{ project.description }}</h6>
+
+		<ul>
+			<li *ngFor="let point of project.points">
+				{{ point }}
+			</li>
+		</ul>
+		<a *ngIf="project.url" [href]="project.url" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+			View Project
+		</a>
+	</div>
+</section>

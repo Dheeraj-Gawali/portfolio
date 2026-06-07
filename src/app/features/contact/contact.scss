@@ -1,0 +1,43 @@
+.contact form {
+  max-width: 500px;
+  margin-top: 24px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+.contact {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  // background: #f8f9fa;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #161b2b, #112851);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    color: #fff;
+    border: solid 1px #fff;
+  }
+
+  div {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+  }
+}

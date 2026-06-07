@@ -77,6 +77,10 @@ button:hover {
   background-color: #1e40af;
 }
 
+.bgColorClass {
+  background: linear-gradient(135deg, #0c0f18, #112851);;
+  color: #fff;
+}
 
 @media (max-width: 768px) {
   .nav-links {

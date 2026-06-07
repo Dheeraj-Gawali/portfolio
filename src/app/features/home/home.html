@@ -1,0 +1,20 @@
+<section class="home-section bgColorClass">
+	<div class="home-content">
+		<h1 class="animated-name">
+			<span>Hi, i'm </span>&nbsp;
+			<span *ngFor="let letter of nameLetters; let i = index" [style.animation-delay.ms]="i * 100">
+				{{ letter }}
+			</span>
+		</h1>
+		<h2 class="animated-title">{{ title }}</h2>
+		<p class="animated-summary">
+			Highly skilled Angular Developer with 6+ years of experience building scalable and responsive web
+			applications.
+		</p>
+		<div class="home-buttons">
+			<button class="btn btn-primary" routerLink="/projects">View My Work</button>			
+			<button class="btn btn-outline-primary" type="button" (click)="downloadResume($event)">Download
+						Resume</button>
+		</div>
+	</div>
+</section>
