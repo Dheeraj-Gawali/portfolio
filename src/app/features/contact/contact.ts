@@ -1,29 +1,41 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
-// import { MatNavList } from '@angular/material/list';
 
 @Component({
   selector: 'app-contact',
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule],
   templateUrl: './contact.html',
   styleUrl: './contact.scss'
 })
 export class Contact {
-contactForm = new FormGroup({
-    name: new FormControl('', [Validators.required]),
-    email: new FormControl('', [Validators.required, Validators.email]),
-    message: new FormControl('', [Validators.required, Validators.minLength(10)])
-  });
+  
 
-  // For demonstration, we'll just log the data
-  onSubmit() {
-    if (this.contactForm.valid) {
-      console.log('Form Data:', this.contactForm.value);
-      alert('Thank you! Your message has been submitted.');
-      this.contactForm.reset();
-    } else {
-      alert('Please fill in all required fields correctly.');
-    }
+  contact = {
+    email: 'dheerajgawali98@gmail.com',
+    phone: '+91 8269911050',
+    location: 'Indore, Madhya Pradesh, India',
+
+    linkedin: 'https://linkedin.com/in/dheeraj-gawali-46272017a',
+
+    github: 'https://github.com/Dheeraj-Gawali'
+  };
+
+
+  downloadResume(event: Event) {
+
+    const fileUrl = 'assets/Dheeraj_Resume_Angular.pdf';
+
+    const link = document.createElement('a');
+
+    link.href = fileUrl;
+
+    link.download = 'Dheeraj_Resume_Angular.pdf';
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
+
   }
 }

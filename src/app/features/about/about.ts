@@ -12,9 +12,11 @@ export class About {
   profile = {
     name: 'Dheeraj Gawali',
     title: 'Senior Angular Developer',
-    summary: `I'm Dheeraj Gawali, a Senior Angular Developer with 6+ years of experience building enterprise web applications using Angular, TypeScript, RxJS, and modern frontend technologies. I enjoy creating scalable architectures, reusable components, and responsive user experiences that solve real business problems.
+    summary: `I'm Dheeraj Gawali, a Senior Angular Developer with 6+ years of experience building enterprise web applications using Angular, TypeScript, RxJS, and modern frontend technologies.
 
-Over the years, I've worked on product-based and client-focused projects, delivering high-quality solutions with a strong focus on performance, maintainability, and clean code. After a planned career break, I am now actively seeking new opportunities to contribute my experience and continue growing as a frontend engineer.
+I specialize in creating scalable architectures, reusable components, responsive interfaces, REST API integration, and performance-focused solutions.
+
+I have worked on product-based and client projects, delivering maintainable applications while collaborating with teams using Agile practices.
 `,
   };
 
@@ -30,26 +32,4 @@ Over the years, I've worked on product-based and client-focused projects, delive
     'Performance Optimization'
   ];
 
-  // Experience summary
-  experiences = [
-    {
-      role: 'Angular Developer',
-      company: 'Aplite Info Solution Pvt Ltd, Indore, MP',
-      duration: 'April 2019 – May 2025',
-      projects: [
-        {
-          name: 'Freight Linc',
-          description: 'Converted wireframes into fully responsive Angular applications using HTML, CSS, Bootstrap and Angular CLI, improving UI delivery by ~100%.'
-        },
-        {
-          name: 'Ucodia',
-          description: 'Resolved performance and UI bugs mid-development, reducing client bug tickets by 40%.'
-        },
-        {
-          name: 'EyeOnTask',
-          description: 'Enhanced company product since 2019, built 20+ dynamic and reusable Angular components, optimized frontend API integration, and mentored junior developers.'
-        }
-      ]
-    }
-  ];
 }

@@ -1,26 +1,111 @@
-<section class="bgColorClass">
-    <div class="contact">
-        <h2>Contact Me</h2>
-        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-            <label for="name">Name</label>
-            <input id="name" formControlName="name" placeholder="Your Name" />
-            <div *ngIf="contactForm.controls['name'].invalid && contactForm.controls['name'].touched">
-                Name is required.
+<section class="contact-section" id="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Let's Connect</h2>
+
+            <p class="subtitle">
+                I'm actively seeking Angular Developer opportunities.
+                Whether you have a role, project, or collaboration in mind,
+                I'd be happy to connect.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="contact-card">
+
+                    <div class="icon">📧</div>
+
+                    <h5>Email</h5>
+
+                    <a [href]="'mailto:' + contact.email">
+
+                        {{contact.email}}
+
+                    </a>
+
+                </div>
+
             </div>
 
-            <label for="email">Email</label>
-            <input id="email" formControlName="email" placeholder="Your Email" />
-            <div *ngIf="contactForm.controls['email'].invalid && contactForm.controls['email'].touched">
-                Enter a valid email.
+            <div class="col-md-4">
+
+                <div class="contact-card">
+
+                    <div class="icon">📱</div>
+
+                    <h5>Phone</h5>
+
+                    <a [href]="'tel:' + contact.phone">
+
+                        {{contact.phone}}
+
+                    </a>
+
+                </div>
+
             </div>
 
-            <label for="message">Message</label>
-            <textarea id="message" formControlName="message" placeholder="Your Message"></textarea>
-            <div *ngIf="contactForm.controls['message'].invalid && contactForm.controls['message'].touched">
-                Message must be at least 10 characters.
+            <div class="col-md-4">
+
+                <div class="contact-card">
+
+                    <div class="icon">📍</div>
+
+                    <h5>Location</h5>
+
+                    <p>
+
+                        {{contact.location}}
+
+                    </p>
+
+                </div>
+
             </div>
 
-            <button class="btn btn-outline-primary" type="submit">Send Message</button>
-        </form>
+        </div>
+
+        <div class="resume-section mt-5">
+
+            <button
+                class="btn btn-primary btn-lg"
+                (click)="downloadResume($event)">
+
+                📄 Download Resume
+
+            </button>
+
+        </div>
+
+        <div class="social-links mt-5">
+
+            <a
+                [href]="contact.linkedin"
+                target="_blank"
+                class="btn btn-outline-light">
+
+                LinkedIn
+
+            </a>
+
+            <a
+                [href]="contact.github"
+                target="_blank"
+                class="btn btn-outline-light ms-3">
+
+                GitHub
+
+            </a>
+
+        </div>
+
     </div>
+
 </section>

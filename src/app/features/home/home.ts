@@ -30,4 +30,10 @@ export class Home {
 			document.body.removeChild(link);
 		}
 	}
+	
+	scrollToProjects() {
+		document.getElementById('projects')?.scrollIntoView({
+			behavior: 'smooth'
+		});
+	}
 }

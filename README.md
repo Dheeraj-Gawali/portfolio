@@ -1,79 +1,151 @@
-# MyPortfolio
+# 🌐 Dheeraj Gawali - Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.3.
+A modern, responsive portfolio built with **Angular 20** showcasing my experience, technical skills, and Angular projects.
 
-## Development server
+## 🚀 Live Demo
 
-To start a local development server, run:
+👉 https://dheeraj-gawali.github.io/portfolio/
+
+## 📌 About
+
+I'm **Dheeraj Gawali**, a Senior Angular Developer with **6+ years of experience** building scalable, responsive, and enterprise web applications.
+
+This portfolio highlights my professional experience, featured projects, technical skills, and contact information.
+
+## ✨ Features
+
+- 🎨 Modern and responsive UI
+- ⚡ Built with Angular 20 Standalone Components
+- 📱 Fully responsive for desktop, tablet, and mobile
+- 🌙 Clean dark theme
+- 🚀 Smooth scrolling navigation
+- 📂 Featured Angular projects
+- 💼 Professional experience timeline
+- 🛠 Technical skills section
+- 📄 Resume download
+- 📬 Contact section
+
+## 🛠 Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| Angular 20 | Frontend Framework |
+| TypeScript | Programming Language |
+| HTML5 | Markup |
+| SCSS | Styling |
+| Bootstrap 5 | Responsive Design |
+| RxJS | Reactive Programming |
+| Git & GitHub | Version Control |
+
+## 📂 Project Structure
+
+```text
+src
+│
+├── app
+│   ├── features
+│   │   ├── home
+│   │   ├── about
+│   │   ├── skills
+│   │   ├── experience
+│   │   ├── projects
+│   │   └── contact
+│   │
+│   └── layout
+│       ├── header
+│       └── footer
+│
+├── assets
+└── styles.scss
+```
+
+## ⚙ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Dheeraj-Gawali/portfolio.git
+```
+
+Navigate to the project
+
+```bash
+cd portfolio
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run locally
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```text
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🚀 Deployment
+
+Build for GitHub Pages
 
 ```bash
-ng generate --help
+npm run build:gh
 ```
 
-## Building
-
-To build the project run:
+Deploy
 
 ```bash
-ng build
+npm run deploy
 ```
+## 📸 Screenshots
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### Home
 
-## Running unit tests
+![Home](README-Images/hero.png)
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+### About
 
-## Running end-to-end tests
+![About](README-Images/about.png)
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+### Projects
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+![Projects](README-Images/projects.png)
 
-## Additional Resources
+---
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-=======
+### Experience
 
-# Angular Portfolio
+![Experience](README-Images/experience.png)
 
-Professional portfolio website built using Angular v20.
+---
 
-## Features
-- Fully responsive design
-- Animated home section
-- About, Projects, Contact pages
-- Reactive contact form
-- Modern Angular v20 standalone architecture
+### Contact
 
-## Tech Stack
-- Angular v20
-- TypeScript
-- SCSS
-- RxJS
+![Contact](README-Images/contact.png)
 
+## 📬 Contact
 
+**Dheeraj Gawali**
+
+📧 Email: your-email@gmail.com
+
+💼 LinkedIn:
+https://linkedin.com/in/dheeraj-gawali-46272017a
+
+💻 GitHub:
+https://github.com/Dheeraj-Gawali
+
+## 📄 License
+
+This project is open source and available under the MIT License.

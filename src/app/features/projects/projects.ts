@@ -8,40 +8,176 @@ import { Component } from '@angular/core';
 	styleUrl: './projects.scss'
 })
 export class Projects {
+
 	projects = [
+
 		{
+			featured: true,
+
+			name: 'Document Workflow Management',
+
+			type: 'Personal Project',
+
+			image: 'projects/document-workflow.png',
+
+			description: 'Designed and developed a complete document workflow management system using Angular 20 to streamline document organization, approvals, and status tracking.',
+
+			technologies: [
+				'Angular 20',
+				'TypeScript',
+				'RxJS',
+				'Bootstrap',
+				'SCSS',
+				'Reactive Forms',
+				'Standalone Components'
+			],
+
+			url: 'https://dheeraj-gawali.github.io/document-workflow-management/documents',
+
+			github: 'https://github.com/Dheeraj-Gawali/document-workflow-management',
+
+			points: [
+				'Document creation and editing',
+				'Workflow status tracking',
+				'Approval matrix',
+				'Dynamic form rendering',
+				'File upload with progress',
+				'Lazy loading',
+				'Route Guards',
+				'Custom Directives',
+				'Responsive Design'
+			]
+		},
+
+
+		{
+
+
 			name: 'EyeOnTask',
-			description: 'Company Product Enhancements',
-    		url: 'https://www.eyeontask.com/',
+
+			type: 'Company Product',
+
+			featured: false,
+
+			image: 'projects/eyeontask.png',
+
+
+			description:
+				'Enterprise product enhancement project where I developed scalable Angular modules, reusable components and performance improvements.',
+
+
+			technologies: [
+
+				'Angular',
+				'TypeScript',
+				'RxJS',
+				'REST API',
+				'Bootstrap'
+
+			],
+
+
+			url: 'https://www.eyeontask.com/',
+
+
 			points: [
-				'Continuously enhanced core product since 2019, building modular features, improving performance, and maintaining code architecture across Angular versions.',
-				'Designed and implemented over 20 dynamic and reusable Angular components, modules and services for the company’s flagship product using Angular v6→v18.',
-				'Built dynamic templates and leveraged RxJS for state management, increasing application responsiveness and maintainability.',
-				'Integrated frontend with RESTful APIs, boosting API interaction efficiency and reducing latency using optimized HTTP services.',
-				'Collaborated within an Agile/Scrum team, participating in sprint planning, standups, code reviews, and retrospectives to deliver projects on time.',
-				'Mentored junior developers on Angular best practices and components architecture, elevating team skill level and code quality.'
+
+				'Developed 20+ reusable Angular components',
+
+				'Enhanced product modules since 2019',
+
+				'Implemented dynamic templates and RxJS solutions',
+
+				'Optimized REST API integration',
+
+				'Mentored junior developers'
+
 			]
+
+
 		},
+
+
 		{
+
+
 			name: 'Ucodia',
-			description: 'Client Support & Performance Optimization',
+
+			type: 'Client Project',
+
+			featured: false,
+
+
+			description:
+				'Client support and performance optimization project focused on resolving UI issues and improving application stability.',
+
+
+			technologies: [
+
+				'Angular',
+				'HTML',
+				'CSS',
+				'Bootstrap'
+
+			],
+
+
 			points: [
-				'Joined the project during mid-production phase to resolve critical UI and performance issues',
-				'Troubleshot and fixed production bugs in existing Angular codebase',
-				'Delivered fixes within tight deadlines, reducing bug tickets by 40%',
-				'Enhanced overall application stability and improved client satisfaction'
+
+				'Resolved production UI issues',
+
+				'Improved application stability',
+
+				'Reduced client bug tickets',
+
+				'Delivered enhancements under deadlines'
+
 			]
+
+
 		},
+
+
 		{
+
+
 			name: 'Freight Linc',
-			description: 'Wireframe-to-Website Angular Application',
+
+			type: 'Client Project',
+
+			featured: false,
+
+
+			description:
+				'Converted client wireframes into a fully responsive Angular web application.',
+
+
+			technologies: [
+
+				'Angular',
+				'Bootstrap',
+				'SCSS',
+				'HTML'
+
+			],
+
+
 			points: [
-				'Converted client-provided wireframes into a fully responsive Angular web application',
-				'Implemented UI using Angular, HTML, CSS, Bootstrap, and Angular CLI',
-				'Ensured pixel-perfect design implementation and cross-browser compatibility',
-				'Improved UI delivery speed and accuracy by ~100%'
+
+				'Converted wireframes into responsive screens',
+
+				'Implemented reusable UI components',
+
+				'Improved UI delivery speed',
+
+				'Ensured cross-browser compatibility'
+
 			]
+
+
 		}
+
+
 	];
 
 }

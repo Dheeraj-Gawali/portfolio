@@ -1,12 +1,126 @@
-.footer {
-  background-color: #0f172a;
-  color: #e5e7eb;
-  padding: 24px 10%;
+.footer-section {
+
+  background: #020617;
+
+  color: white;
+
+  padding: 50px 0 30px;
+
+  text-align: center;
+
+
 }
 
+
+
 .footer-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+
+
+  h3 {
+
+    font-size: 2rem;
+
+    color: #38bdf8;
+
+    margin-bottom: 10px;
+
+  }
+
+
+
+  .role {
+
+    font-size: 1.1rem;
+
+    color: #e2e8f0;
+
+  }
+
+
+
+  .tech {
+
+    color: #94a3b8;
+
+    margin-top: 15px;
+
+  }
+
+
+}
+
+
+
+hr {
+
+  border-color: #334155;
+
+}
+
+
+
+.copyright {
+
+  color: #94a3b8;
+
+  margin-top: 20px;
+
+  margin-bottom: 5px;
+
+}
+
+
+
+.built {
+
+  color: #64748b;
+
+  font-size: .9rem;
+
+}
+
+.top-btn {
+
+
+  position: fixed;
+
+  right: 25px;
+
+  bottom: 25px;
+
+
+  width: 45px;
+
+  height: 45px;
+
+
+  border-radius: 50%;
+
+  border: none;
+
+
+  background: #3b82f6;
+
+  color: white;
+
+
+  font-size: 22px;
+
+
+  cursor: pointer;
+
+
+  transition: .3s;
+
+
+
+  &:hover {
+
+    transform: translateY(-5px);
+
+    background: #2563eb;
+
+  }
+
+
 }

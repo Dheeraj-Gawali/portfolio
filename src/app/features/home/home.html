@@ -1,20 +1,117 @@
-<section class="home-section bgColorClass">
-	<div class="home-content">
-		<h1 class="animated-name">
-			<span>Hi, i'm </span>&nbsp;
-			<span *ngFor="let letter of nameLetters; let i = index" [style.animation-delay.ms]="i * 100">
-				{{ letter }}
-			</span>
-		</h1>
-		<h2 class="animated-title">{{ title }}</h2>
-		<p class="animated-summary">
-			Highly skilled Angular Developer with 6+ years of experience building scalable and responsive web
-			applications.
-		</p>
-		<div class="home-buttons">
-			<button class="btn btn-primary" routerLink="/projects">View My Work</button>			
-			<button class="btn btn-outline-primary" type="button" (click)="downloadResume($event)">Download
-						Resume</button>
-		</div>
-	</div>
+<section class="hero-section" id="home">
+
+    <div class="container-fluid">
+
+        <div class="row align-items-center gy-5">
+
+            <!-- LEFT -->
+
+            <div class="col-lg-6">
+
+                <p class="hello-text">
+                    👋 Hello, I'm
+                </p>
+
+                <h1 class="hero-name">
+
+                    <span *ngFor="let letter of nameLetters; let i = index"
+                        [style.animation-delay.ms]="i*100">
+
+                        {{letter}}
+
+                    </span>
+
+                </h1>
+
+                <h2 class="hero-title">
+
+                    {{title}}
+
+                </h2>
+
+                <p class="hero-summary">
+
+                    Passionate Angular Developer with 6+ years of experience designing enterprise applications, building reusable components, integrating REST APIs, and creating responsive user experiences.
+
+                </p>
+
+                <div class="tech-stack">
+
+                    <span>Angular</span>
+
+                    <span>TypeScript</span>
+
+                    <span>RxJS</span>
+
+                    <span>Bootstrap</span>
+
+                    <span>REST API</span>
+
+                </div>
+
+                <div class="hero-buttons">
+                    
+					<button class="btn btn-primary btn-lg" (click)="scrollToProjects()">
+						View Projects
+					</button>
+
+                    <button
+                        class="btn btn-outline-light btn-lg"
+                        (click)="downloadResume($event)">
+
+                        Download Resume
+
+                    </button>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+
+                        <h3>6+</h3>
+
+                        <p>Years</p>
+
+                    </div>
+
+                    <div>
+
+                        <h3>20+</h3>
+
+                        <p>Modules</p>
+
+                    </div>
+
+                    <div>
+
+                        <h3>100+</h3>
+
+                        <p>Issues Solved</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="col-lg-6">
+
+                <div class="profile-wrapper">
+
+                    <img
+                        src="img/Dheeru.jpg"
+                        class="profile-image"
+                        alt="Profile">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>

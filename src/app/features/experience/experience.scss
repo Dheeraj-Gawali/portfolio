@@ -1,0 +1,127 @@
+.experience-section {
+
+    padding: 80px 0;
+
+    background: #0f172a;
+
+    color: #f8fafc;
+
+    min-height: 100vh;
+
+}
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+
+}
+
+.section-title h2 {
+
+    color: #38bdf8;
+
+    font-size: 3rem;
+
+}
+
+.section-title p {
+
+    color: #cbd5e1;
+
+    max-width: 700px;
+
+    margin: auto;
+
+}
+
+.experience-card {
+
+    background: linear-gradient(135deg,#161b2b,#112851);
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+}
+
+.experience-header {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+.experience-header h3 {
+
+    color: #38bdf8;
+
+    font-size: 2rem;
+
+}
+
+.experience-header h4 {
+
+    color: white;
+
+    margin-top: 10px;
+
+}
+
+.experience-header span {
+
+    color: #94a3b8;
+
+}
+
+.achievement-card {
+
+    height: 100%;
+
+    background: rgba(255,255,255,.05);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    transition: .3s;
+
+}
+
+.achievement-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #38bdf8;
+
+}
+
+.icon {
+
+    font-size: 2rem;
+
+    margin-bottom: 15px;
+
+}
+
+.achievement-card h5 {
+
+    color: #38bdf8;
+
+    margin-bottom: 12px;
+
+}
+
+.achievement-card p {
+
+    color: #cbd5e1;
+
+    font-size: .95rem;
+
+}

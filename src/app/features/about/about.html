@@ -1,25 +1,65 @@
-<section class="about bgColorClass">
-	<div class="container">
-		<!-- <h2>About Me</h2> -->
-		<div class="aboutCard">
-			{{ profile.summary }}
-		 </div>
-		<!-- <p class="summary"></p> -->
+<section class="about-section" id="about">
+    <div class="container">
 
-		<h3 class="mb-2">Skills</h3>
-		<ul class="skills">
-			<li *ngFor="let skill of skills">{{ skill }}</li>
-		</ul>
+        <!-- Heading -->
 
-		<h3 class="mb-2">Experience</h3>
-		<div *ngFor="let exp of experiences" class="experience">
-			<h4>{{ exp.role }} - {{ exp.company }}</h4>
-			<p class="duration">{{ exp.duration }}</p>
-			<ul>
-				<li *ngFor="let project of exp.projects">
-					<strong>{{ project.name }}:</strong> {{ project.description }}
-				</li>
-			</ul>
-		</div>
-	</div>
+        <div class="section-title">
+            <h2>About Me</h2>
+            <p>
+                Senior Angular Developer with 6+ years of experience
+                building scalable web applications.
+            </p>
+        </div>
+
+        <!-- Profile -->
+
+        <div class="about-card">
+            <p>
+                {{profile.summary}}
+            </p>
+        </div>
+
+        <!-- Highlights -->
+
+        <div class="row highlights">
+            <div class="col-md-4">
+                <div class="highlight-card">
+                    <h3>6+</h3>
+                    <p>
+                        Years Experience
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="highlight-card">
+                    <h3>Angular</h3>
+                    <p>
+                        Frontend Expertise
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="highlight-card">
+                    <h3>Enterprise</h3>
+                    <p>
+                        Application Development
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+
+        <div class="skills-section">
+            <h3>
+                Technical Skills
+            </h3>
+            <div class="skills-container">
+                <span
+                *ngFor="let skill of skills">
+                    {{skill}}
+                </span>
+            </div>
+        </div>
+    </div>
 </section>
