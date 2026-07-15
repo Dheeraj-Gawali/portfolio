@@ -108,31 +108,31 @@ npm run deploy
 
 ### Home
 
-![Home](README-Images/hero.png)
+![Home](public/README-Images/hero.png)
 
 ---
 
 ### About
 
-![About](README-Images/about.png)
+![About](public/README-Images/about.png)
 
 ---
 
 ### Projects
 
-![Projects](README-Images/projects.png)
+![Projects](public/README-Images/projects.png)
 
 ---
 
 ### Experience
 
-![Experience](README-Images/experience.png)
+![Experience](public/README-Images/experience.png)
 
 ---
 
 ### Contact
 
-![Contact](README-Images/contact.png)
+![Contact](public/README-Images/contact.png)
 
 ## 📬 Contact
 
